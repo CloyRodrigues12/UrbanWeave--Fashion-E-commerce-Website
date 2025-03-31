@@ -1,0 +1,53 @@
+
+.carousel-container {
+    position: relative;
+    width: 100%;  /* Full width of the container */
+    max-width: 1500px;  /* Max width for larger screens */
+    height: 380px;  
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    z-index: 1;
+    margin-bottom: 2px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;  /* Fill the container height */
+}
+
+.carousel-slide {
+    min-width: 100%;  /* Each slide takes up 100% of the container */
+    height: 100%;     /* Ensure each slide fills the carousel height */
+}
+
+.carousel-slide img {
+    width: 100%;     /* Image fills the width of the carousel */
+    height: 100%;  /* Ensures the image covers the box while cropping, for perfect fit */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(159, 159, 159, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
